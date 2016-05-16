@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
+  "dependencies": {
+   "jquery": "^2.2.3"
+ },
   "scripts": {
     "start": "electron main.js"
   },

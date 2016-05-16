@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <br/>
-    <button type="button" id="new-window">Open a new window</button>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electron test</title>
+    <link href="./styles/app.css" rel="stylesheet"></link>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+</head>
+<body>
+
+<div class="absaloute-center">
+  <h1 class="load-text">Just testing</h1>
+  <h3 class="load-text">Just testing out how electron works</h3>
+  <button id="btnOpenNewPage">start</button>
+</div>
+
+<!-- In Electron, this is the correct way to include jQuery -->
+<script>window.$ = window.jQuery = require('jquery');</script>
+<script src="./js/logic.js"></script>
+<script>window.$ = window.bootstrap = require('bootstrap');</script>
+
 </html>
+</body>

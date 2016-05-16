@@ -1,0 +1,22 @@
+body{
+  -webkit-animation: colorPulse 10s infinite alternate;
+}
+
+.load-text {
+  color: white;
+}
+.absaloute-center{
+  height: 60%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@-webkit-keyframes colorPulse {
+    0% {background-color: #2196f3;}
+    25% {background-color: #e91e63;}
+    50% {background-color: #ff9800;}
+    75% {background-color: #8bc34a;}
+    100% {background-color: #673ab7}
+}
